@@ -3,15 +3,21 @@
 
 int main()
 {
-    int marks[]={10,20,30,40,50};
-    int n=5;
 
-    for(int i=0;i<n;i++){
+   int arr[5];
 
-    printf("%d\n",marks[i]);
-    }
+   int sum=0;
+
+   for(int i=0;i<5;i++){
+        scanf("%d",&arr[i]);
+    sum = sum+arr[i];
+   }
 
 
-    printf("\nmarks of cdna ");
+
+   printf("The sum is%d:", sum);
+   printf("\nThe average number is:%.2f",(float)sum/5);
+
+
     return 0;
 }
